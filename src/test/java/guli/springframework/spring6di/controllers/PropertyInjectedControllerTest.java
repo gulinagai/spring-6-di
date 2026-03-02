@@ -1,0 +1,23 @@
+package guli.springframework.spring6di.controllers;
+
+import guli.springframework.spring6di.services.GreetingServiceImpl;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+class PropertyInjectedControllerTest {
+
+    PropertyInjectedController propertyInjectedController;
+
+    @BeforeEach
+    void setUp() {
+        propertyInjectedController = new PropertyInjectedController();
+        propertyInjectedController.greetingService = new GreetingServiceImpl();            // essa é também uma forma de DI mas sem Spring, também não é a forma mais recomendada.
+    }
+
+    @Test
+    void sayHello() {
+        System.out.println(propertyInjectedController.sayHello());
+    }
+}
