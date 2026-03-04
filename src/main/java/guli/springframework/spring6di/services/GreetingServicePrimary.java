@@ -3,7 +3,7 @@ package guli.springframework.spring6di.services;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;
 
-@Primary
+//@Primary
 @Service
 public class GreetingServicePrimary implements GreetingService {
 
