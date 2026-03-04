@@ -5,7 +5,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.ActiveProfiles;
 
-@ActiveProfiles("pt-br")
+//@ActiveProfiles("pt-br")
 @SpringBootTest
 class Myi18NControllerTestPT {
 
